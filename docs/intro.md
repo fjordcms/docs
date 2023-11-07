@@ -2,20 +2,34 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Začínáme s FjordCMS
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Webový systém určený pro tvoření originálních webů rychleji, efektivněji.  Disponuje modularitou a výsledkem jsou weby s libovolnou šablonou a různorodým zaměřením.
 
-## Getting Started
+**Použité backend technologie:** PHP (Nette), MySQL, JSON
 
-Get started by **creating a new site**.
+### Co je cílem?
+-   Vytvoření webového systému s rychlým nasazením na weby různorodých zájmů a funkcionalit
+-   Webový systém s podporou aktualizací a rozšíření
+-  Webový systém s možností tvorby virtuální databáze pro uchovávání různých dat na základě aktuálního uživatele webového systému (viz EAV)
+-   Webový systém s podporou multijazyčnosti
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### Co je potřeba?
 
-### What you'll need
+- [PHP with version >7.4](https://www.php.net/downloads.php)
+- webserver supporting PHP (Apache, Nginx) and administration of .htaccess
+- [MySQL/MariaDB database](https://mariadb.org/)
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Logika a návrh systému
+Fjord CMS je postaven tak, aby se mohl přizpůsobit náročným webům a zhotovením různého typu (eshop, ale zároveň i třeba blog či portfolio). 
+Systém je rozdělen na tři logické celky (jádro, šablony, moduly).
+
+### Jádro
+Obsahuje základní funkcionalitu systému a řeší propojení šablon, modulů a databáze. Řeší autentizaci i autorizace (vč. systému rolí a práv.)
+
+### Moduly
+Kvůli modularitě, kterou Fjord CMS podporuje, je nutné ke všemu přistupovat dynamicky a tak i přemýšlet, aby výsledkem byl nezastaralý rozvíjející se redakční systém.
+Moduly jsou samostatné části obohacující systém o další funkcionalitu. Například modul Články ; Samostatné stránky atd.
 
 ## Generate a new site
 
