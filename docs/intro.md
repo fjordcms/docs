@@ -25,37 +25,28 @@ Fjord CMS je postaven tak, aby se mohl přizpůsobit náročným webům a zhotov
 Systém je rozdělen na tři logické celky (jádro, šablony, moduly).
 
 ### Jádro
-Obsahuje základní funkcionalitu systému a řeší propojení šablon, modulů a databáze. Řeší autentizaci i autorizace (vč. systému rolí a práv.)
+Obsahuje základní funkcionalitu systému a řeší propojení šablon, modulů a databáze. Řeší problematiku, která je společná pro weby různého spektra.
+- [Autentizace do systému](ddas)
+  - vč. backendového řešení zapomenutého hesla
+  - společné pro administrátory i uživatele
+-  [Autorizace a systém permissí a rolí](das)
+-  [Nastavení globálních proměnných pro SEO](das) (google-analytics, meta proměnné)
+- [Nastavení emailových serverů (SMTP)](das)
 
 ### Moduly
 Kvůli modularitě, kterou Fjord CMS podporuje, je nutné ke všemu přistupovat dynamicky a tak i přemýšlet, aby výsledkem byl nezastaralý rozvíjející se redakční systém.
-Moduly jsou samostatné části obohacující systém o další funkcionalitu. Například modul Články ; Samostatné stránky atd.
+Moduly jsou samostatné open-source části obohacující systém o další funkcionalitu.
+Určité moduly jsou v systému zakomponovány a nemusí být instalovány externě. [Seznam předem nainstalovaných modulů](dasd)
 
-## Generate a new site
+**Například pro blogový systém můžeme mít základnu modulů:**
+- Články 
+- Komentáře
+- Stránky
 
-Generate a new Docusaurus site using the **classic template**.
+> **V příštích verzích bude spuštěna i podpora větvení modulů (vytváření sub-modulů) kdy pro modul můžeme vytvářet funkční přídavky.`**
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### Šablona
+Šablona je logická část popisujicí web a design. V nynější verzi systému nejsou dostupné žádné základní šablony a tak pro každý web musí být využita externě nainstalovaná šablona. 
+- [Vytvoření externí šablony](dd)
+- [Instalace externí šablony](dd)
+- [API v šabloně](dd)
