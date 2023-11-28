@@ -20,12 +20,12 @@ Hierarchy of user: (What user has)
 ## Autentizace
 Authentication or verifying user identity is managed by built-in authentication system. In default state, it's implemented only in administration part of system.
 
-## In-fjord authentication system
+### In-fjord authentication system
 Built-in authentication system in FjordCMS solving the problem of secure login (include two-factor authentication) without other features (solution of forgot password, registration) included in modules like UserProfile.
 In case of use in administration (by default) there is registration solved by super-user creating user-account with pre-generated password (then that administration can change it)
 
-### Dvoufázové ověření
-Two-factor authentication is optional and is solved by sending one time verification code on selected E-mail.
+#### Dvoufázové ověření
+Two-factor authentication is optional and is solved by sending one time verification code on selected e-mail.
 
 ## Autorizace
 Authorization (verifying user permissions and roles) is solved by complex system of roles and perms.
