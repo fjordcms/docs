@@ -13,6 +13,7 @@ FjordCMS as complex modular web-system is made up of several parts (hierarchy be
 - Templates (design of website, UI functionality)
     - Template
       - **Admin view**
+        - Template settings
         - Pages and routing mechanism
             - Settings of page variables
         - Module dependencies
@@ -22,6 +23,7 @@ FjordCMS as complex modular web-system is made up of several parts (hierarchy be
 - Modules (backend functionality and data management)
   - Module
     - **Admin view**
+      - Menu/pages structuring
       - Forms
       - Individual database
       - Custom permission nodes
