@@ -1,10 +1,8 @@
-## Record management system
+# Record management system
 
-Record management system or just RMS je funkční celek sloužící jako privátní 
-(je k naskytnutí zatím pouze v administraci) evidence vlastních záznamů dle potřeby. 
- Disponuje uživatelsky přívětivým rozhraním, 
-ve kterém jsou jednoduše vybrána ukládaná data vč. jejich formátu a následně je k nim připravena správa CRUD . 
-Z vývojářského hlediska se jedná o princip dynamického EAV (tedy vytváření samostatné tabulky pro entitní typ, atribut,
-hodnotu a id, které jsou spolu spojeny cizími klíči). 
+Record management system (or just RMS) is private record system in FjordCMS for creating lists, records simply and clearly. Everything is dynamic, so you can create cols and specific forms you want to have for adding new data.
+RMS has a user-friendly interface in which the data to be stored is simply set, and a dynamic crud mechanism is to be automatically generated for it.
 
-Jeho použití je libovolné a povolené pro uživatele s příslušnými právy (dle rolesystemu)
+From developer's point of view is this principle named "EAV" (custom relation database tables for entity, attribute, value and row id - joined/related with foreign keys).
+
+RMS can be used by everyone who has permissions in his account.
