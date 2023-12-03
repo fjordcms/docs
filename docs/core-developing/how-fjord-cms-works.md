@@ -6,7 +6,10 @@ FjordCMS as complex modular web-system is made up of several parts (hierarchy be
   - E-Mail management
   - Private in-administration data/record management system
   - Authorization/Authentication using relational role system
-  - Version management  
+  - Version management
+  - System permissions
+      - Admin panel actions
+      - For template settings (only global, template permissions per page are in Templates)
   - History and action log
     - History of changes (in system/in modules/in templates)
     - Access log
